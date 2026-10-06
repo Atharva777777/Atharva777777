@@ -38,7 +38,7 @@
   <!-- ── ATHARVA BORATE — clip wipe-reveal + subtle upward settle ── -->
   <g clip-path="url(#nameReveal)">
     <text
-      x="430" y="103"
+      x="430" y="108"
       font-family="'SF Pro Display', 'Helvetica Neue', 'Arial', sans-serif"
       font-size="71"
       font-weight="200"
@@ -60,7 +60,7 @@
   </g>
 
   <!-- ── Accent rule — draws from centre outward ── -->
-  <rect x="430" y="120" width="0" height="0.9" rx="0.45" fill="url(#ruleGrad)" opacity="0">
+  <rect x="430" y="125" width="0" height="0.9" rx="0.45" fill="url(#ruleGrad)" opacity="0">
     <animate attributeName="x"       values="430;294"  dur="0.88s" begin="1.28s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1"/>
     <animate attributeName="width"   values="0;272"    dur="0.88s" begin="1.28s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1"/>
     <animate attributeName="opacity" values="0;1"      dur="0.22s" begin="1.28s" fill="freeze"/>
@@ -68,7 +68,7 @@
 
   <!-- ── AI PRODUCT ENGINEER — delayed fade-up ── -->
   <text
-    x="430" y="152"
+    x="430" y="158"
     font-family="'SF Pro Display', 'Helvetica Neue', 'Arial', sans-serif"
     font-size="10"
     font-weight="400"
