@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Hero Preview — GitHub Scale</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #f0f0f0; font-family: -apple-system, sans-serif; padding: 32px 20px; }
+  label { display: block; font-size: 11px; color: #888; letter-spacing: .08em; text-transform: uppercase; margin-bottom: 8px; }
+  .wrap { max-width: 840px; margin: 0 auto 36px; }
+  .frame {
+    padding: 28px 28px;
+    border-radius: 8px;
+    text-align: center;
+  }
+  .frame.dark  { background: #0d1117; }
+  .frame.light { background: #ffffff; border: 1px solid #e0e0e0; }
+  img {
+    display: block;
+    max-width: 780px;   /* ~real GitHub README body width */
+    width: 100%;
+    margin: 0 auto;
+  }
+  .note { font-size: 12px; color: #aaa; margin-top: 8px; text-align: center; }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <label>GitHub Dark Mode — 780px body width</label>
+  <div class="frame dark">
+    <img id="heroImg" src="assets/hero_banner.svg?v=2" alt="Hero Banner">
+  </div>
+  <p class="note">Rendered at max-width: 780px (actual GitHub README column)</p>
+</div>
+
+<div class="wrap">
+  <label>GitHub Light Mode — 780px body width</label>
+  <div class="frame light">
+    <img src="assets/hero_banner.svg?v=2" alt="Hero Banner">
+  </div>
+</div>
+
+<script>
+  // Force SVG to reload so animation plays from start each visit
+  document.querySelectorAll('img').forEach(img => {
+    const src = img.src;
+    img.src = '';
+    img.src = src;
+  });
+</script>
+</body>
+</html>
