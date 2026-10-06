@@ -1,16 +1,15 @@
-# ✦ Atharva Borate ✦
+<div align="center">
 
-### AI • Software Development • Product Development
+![Atharva Borate](assets/hero_banner.svg)
 
-Passionate about building technology that solves real-world problems and creates meaningful impact.
+</div>
 
 ---
 
-### Skills & Interests
+<div align="center">
 
-```text
-AI & Machine Learning • Python • MongoDB • SQL
-Full-Stack Development • Product Thinking • Business Analytics
-```
+![About](assets/about_section.svg)
+
+</div>
 
 > Build useful things. Stay curious. Keep improving.
