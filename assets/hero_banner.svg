@@ -1,11 +1,18 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 188" width="860" height="188">
   <defs>
-
-    <!-- Radial vignette: slightly warmer/lighter at centre, darker at rim -->
-    <radialGradient id="bg" cx="50%" cy="48%" r="65%">
-      <stop offset="0%"   stop-color="#202020"/>
-      <stop offset="100%" stop-color="#0c0c0c"/>
-    </radialGradient>
+    <style>
+      :root {
+        --text-primary: #111111;
+        --text-secondary: #555555;
+        --accent: #c4a97d;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --text-primary: #ededed;
+          --text-secondary: #8c8c8c;
+        }
+      }
+    </style>
 
     <!-- Clip rect for the name wipe-reveal (left → right) -->
     <clipPath id="nameReveal">
@@ -21,19 +28,16 @@
       </rect>
     </clipPath>
 
-    <!-- Warm-sand accent gradient (matches About section colour palette) -->
+    <!-- Warm-sand accent gradient -->
     <linearGradient id="ruleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%"   stop-color="#0c0c0c" stop-opacity="0"/>
-      <stop offset="15%"  stop-color="#c4a97d" stop-opacity="0.55"/>
-      <stop offset="50%"  stop-color="#c4a97d" stop-opacity="0.95"/>
-      <stop offset="85%"  stop-color="#c4a97d" stop-opacity="0.55"/>
-      <stop offset="100%" stop-color="#0c0c0c" stop-opacity="0"/>
+      <stop offset="0%"   stop-color="var(--accent)" stop-opacity="0"/>
+      <stop offset="15%"  stop-color="var(--accent)" stop-opacity="0.55"/>
+      <stop offset="50%"  stop-color="var(--accent)" stop-opacity="0.95"/>
+      <stop offset="85%"  stop-color="var(--accent)" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="var(--accent)" stop-opacity="0"/>
     </linearGradient>
 
   </defs>
-
-  <!-- ── Background ── -->
-  <rect width="860" height="188" fill="url(#bg)"/>
 
   <!-- ── ATHARVA BORATE — clip wipe-reveal + subtle upward settle ── -->
   <g clip-path="url(#nameReveal)">
@@ -44,7 +48,7 @@
       font-weight="200"
       letter-spacing="9"
       text-anchor="middle"
-      fill="#ededed"
+      fill="var(--text-primary)"
     >
       <animateTransform
         attributeName="transform"
@@ -66,17 +70,17 @@
     <animate attributeName="opacity" values="0;1"      dur="0.22s" begin="1.28s" fill="freeze"/>
   </rect>
 
-  <!-- ── AI PRODUCT ENGINEER — delayed fade-up ── -->
+  <!-- ── PRODUCT ENGINEER — delayed fade-up ── -->
   <text
-    x="430" y="158"
+    x="430" y="148"
     font-family="'SF Pro Display', 'Helvetica Neue', 'Arial', sans-serif"
     font-size="10"
     font-weight="400"
     letter-spacing="5.5"
     text-anchor="middle"
-    fill="#686868"
+    fill="var(--text-secondary)"
     opacity="0"
-  >AI PRODUCT ENGINEER
+  >PRODUCT ENGINEER
     <animate
       attributeName="opacity"
       values="0;1"
@@ -91,6 +95,36 @@
       values="0,7; 0,0"
       dur="0.9s"
       begin="1.76s"
+      fill="freeze"
+      calcMode="spline"
+      keySplines="0.4 0 0.2 1"/>
+  </text>
+
+  <!-- ── SECONDARY DESCRIPTOR — further delayed fade-up ── -->
+  <text
+    x="430" y="168"
+    font-family="'SF Pro Display', 'Helvetica Neue', 'Arial', sans-serif"
+    font-size="8.5"
+    font-weight="400"
+    letter-spacing="3.5"
+    text-anchor="middle"
+    fill="var(--text-secondary)"
+    opacity="0"
+  >SOFTWARE · AI · DATA · SYSTEMS
+    <animate
+      attributeName="opacity"
+      values="0;1"
+      dur="0.9s"
+      begin="1.96s"
+      fill="freeze"
+      calcMode="spline"
+      keySplines="0.4 0 0.2 1"/>
+    <animateTransform
+      attributeName="transform"
+      type="translate"
+      values="0,7; 0,0"
+      dur="0.9s"
+      begin="1.96s"
       fill="freeze"
       calcMode="spline"
       keySplines="0.4 0 0.2 1"/>
