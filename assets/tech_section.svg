@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 320" width="860" height="320">
+  <defs>
+    <style>
+      :root {
+        --text-primary: #111111;
+        --text-secondary: #555555;
+        --text-muted: #888888;
+        --accent: #c4a97d;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --text-primary: #ededed;
+          --text-secondary: #8c8c8c;
+          --text-muted: #5c5c5c;
+        }
+      }
+    </style>
+
+    <linearGradient id="rl" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="var(--accent)" stop-opacity="0"/>
+      <stop offset="10%"  stop-color="var(--accent)" stop-opacity="0.4"/>
+      <stop offset="50%"  stop-color="var(--accent)" stop-opacity="0.65"/>
+      <stop offset="90%"  stop-color="var(--accent)" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="var(--accent)" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="vsep" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"   stop-color="var(--accent)" stop-opacity="0"/>
+      <stop offset="20%"  stop-color="var(--accent)" stop-opacity="0.22"/>
+      <stop offset="80%"  stop-color="var(--accent)" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="var(--accent)" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <text
+    x="46" y="36"
+    font-family="'SF Pro Display', 'Helvetica Neue', 'Arial', sans-serif"
+    font-size="9.5"
+    font-weight="500"
+    letter-spacing="3.5"
+    fill="var(--accent)"
+    opacity="0"
+  >TECHNOLOGY
+    <animate attributeName="opacity" values="0;0.75" keyTimes="0;1" dur="1.2s" begin="0.1s" fill="freeze"/>
+  </text>
+
+  <rect x="46" y="55" width="768" height="0.75" rx="0.4" fill="url(#rl)" opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.8s" begin="0.2s" fill="freeze"/>
+  </rect>
+
+  <line x1="430" y1="75" x2="430" y2="305" stroke="url(#vsep)" stroke-width="0.75" opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.8s" begin="0.4s" fill="freeze"/>
+  </line>
+
+  <!-- LEFT COLUMN -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="1s" begin="0.3s" fill="freeze"/>
+    <text x="46" y="90" font-family="'SF Pro Display', 'Helvetica Neue', 'Arial', sans-serif" font-size="8.5" font-weight="500" letter-spacing="2.5" fill="var(--text-muted)">
+      LANGUAGES
+    </text>
+    <text x="46" y="112" font-family="'SF Pro Display', 'Helvetica Neue', 'Arial', sans-serif" font-size="13" font-weight="400" letter-spacing="0.2" fill="var(--text-primary)">
+      Python · Java · JavaScript · TypeScript · SQL
+    </text>
+  </g>
+
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="1s" begin="0.5s" fill="freeze"/>
+    <text x="46" y="144" font-family="'SF Pro Display', 'Helvetica Neue', 'Arial', sans-serif" font-size="8.5" font-weight="500" letter-spacing="2.5" fill="var(--text-muted)">
+      FRONTEND
+    </text>
+    <text x="46" y="166" font-family="'SF Pro Display', 'Helvetica Neue', 'Arial', sans-serif" font-size="13" font-weight="400" letter-spacing="0.2" fill="var(--text-primary)">
+      React · Next.js · Tailwind CSS · Vite
+    </text>
+  </g>
+
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="1s" begin="0.7s" fill="freeze"/>
+    <text x="46" y="198" font-family="'SF Pro Display', 'Helvetica Neue', 'Arial', sans-serif" font-size="8.5" font-weight="500" letter-spacing="2.5" fill="var(--text-muted)">
+      BACKEND
+    </text>
+    <text x="46" y="220" font-family="'SF Pro Display', 'Helvetica Neue', 'Arial', sans-serif" font-size="13" font-weight="400" letter-spacing="0.2" fill="var(--text-primary)">
+      Flask · FastAPI · Node.js · Express
+    </text>
+  </g>
+
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="1s" begin="0.9s" fill="freeze"/>
+    <text x="46" y="252" font-family="'SF Pro Display', 'Helvetica Neue', 'Arial', sans-serif" font-size="8.5" font-weight="500" letter-spacing="2.5" fill="var(--text-muted)">
+      DATABASES &amp; DATA
+    </text>
+    <text x="46" y="274" font-family="'SF Pro Display', 'Helvetica Neue', 'Arial', sans-serif" font-size="13" font-weight="400" letter-spacing="0.2" fill="var(--text-primary)">
+      PostgreSQL · Supabase · MongoDB
+    </text>
+    <text x="46" y="296" font-family="'SF Pro Display', 'Helvetica Neue', 'Arial', sans-serif" font-size="13" font-weight="400" letter-spacing="0.2" fill="var(--text-primary)">
+      SQLite · SQLAlchemy
+    </text>
+  </g>
+
+  <!-- RIGHT COLUMN -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="1s" begin="0.4s" fill="freeze"/>
+    <text x="476" y="90" font-family="'SF Pro Display', 'Helvetica Neue', 'Arial', sans-serif" font-size="8.5" font-weight="500" letter-spacing="2.5" fill="var(--text-muted)">
+      AI / ML
+    </text>
+    <text x="476" y="112" font-family="'SF Pro Display', 'Helvetica Neue', 'Arial', sans-serif" font-size="13" font-weight="400" letter-spacing="0.2" fill="var(--text-primary)">
+      Scikit-learn · Random Forest · SHAP · KMeans
+    </text>
+    <text x="476" y="134" font-family="'SF Pro Display', 'Helvetica Neue', 'Arial', sans-serif" font-size="13" font-weight="400" letter-spacing="0.2" fill="var(--text-primary)">
+      Isolation Forest · LLMs · RAG · AI Agents
+    </text>
+    <text x="476" y="156" font-family="'SF Pro Display', 'Helvetica Neue', 'Arial', sans-serif" font-size="13" font-weight="400" letter-spacing="0.2" fill="var(--text-primary)">
+      Prompt Engineering · Gemini
+    </text>
+  </g>
+
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="1s" begin="0.8s" fill="freeze"/>
+    <text x="476" y="198" font-family="'SF Pro Display', 'Helvetica Neue', 'Arial', sans-serif" font-size="8.5" font-weight="500" letter-spacing="2.5" fill="var(--text-muted)">
+      CLOUD / DEPLOYMENT
+    </text>
+    <text x="476" y="220" font-family="'SF Pro Display', 'Helvetica Neue', 'Arial', sans-serif" font-size="13" font-weight="400" letter-spacing="0.2" fill="var(--text-primary)">
+      AWS · AWS EC2 · Vercel · Render · Docker
+    </text>
+  </g>
+
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="1s" begin="1.0s" fill="freeze"/>
+    <text x="476" y="252" font-family="'SF Pro Display', 'Helvetica Neue', 'Arial', sans-serif" font-size="8.5" font-weight="500" letter-spacing="2.5" fill="var(--text-muted)">
+      TOOLS
+    </text>
+    <text x="476" y="274" font-family="'SF Pro Display', 'Helvetica Neue', 'Arial', sans-serif" font-size="13" font-weight="400" letter-spacing="0.2" fill="var(--text-primary)">
+      Git · GitHub · Postman · VS Code
+    </text>
+    <text x="476" y="296" font-family="'SF Pro Display', 'Helvetica Neue', 'Arial', sans-serif" font-size="13" font-weight="400" letter-spacing="0.2" fill="var(--text-primary)">
+      Cursor · Figma · Jupyter
+    </text>
+  </g>
+
+</svg>
