@@ -4,15 +4,11 @@
 
 </div>
 
----
-
 <div align="center">
 
 ![About](assets/about_section.svg)
 
 </div>
-
----
 
 <div align="center">
 
