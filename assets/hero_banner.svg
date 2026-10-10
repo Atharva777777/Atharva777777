@@ -14,6 +14,20 @@
       }
     </style>
 
+    <clipPath id="nameReveal">
+      <rect x="0" y="0" width="860" height="188">
+        <set attributeName="width" to="0" begin="0s" dur="0.06s" />
+        <animate
+          attributeName="width"
+          values="0;860"
+          dur="1.35s"
+          begin="0.06s"
+          fill="freeze"
+          calcMode="spline"
+          keySplines="0.77 0 0.18 1"/>
+      </rect>
+    </clipPath>
+
     <!-- Warm-sand accent gradient -->
     <linearGradient id="ruleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%"   stop-color="var(--accent)" stop-opacity="0"/>
@@ -26,20 +40,38 @@
   </defs>
 
   <!-- ── ATHARVA BORATE ── -->
-  <text
-    x="430" y="108"
-    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif"
-    font-size="71"
-    font-weight="200"
-    letter-spacing="9"
-    text-anchor="middle"
-    fill="var(--text-primary)"
-  >
-    ATHARVA BORATE
-  </text>
+  <g clip-path="url(#nameReveal)">
+    <text
+      x="430" y="108"
+      font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif"
+      font-size="71"
+      font-weight="200"
+      letter-spacing="9"
+      text-anchor="middle"
+      fill="var(--text-primary)"
+    >
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,11; 0,0"
+        dur="1.35s"
+        begin="0.06s"
+        fill="freeze"
+        calcMode="spline"
+        keySplines="0.77 0 0.18 1"/>
+      ATHARVA BORATE
+    </text>
+  </g>
 
   <!-- ── Accent rule ── -->
-  <rect x="294" y="125" width="272" height="0.9" rx="0.45" fill="url(#ruleGrad)" />
+  <rect x="294" y="125" width="272" height="0.9" rx="0.45" fill="url(#ruleGrad)" opacity="1">
+    <set attributeName="opacity" to="0" begin="0s" dur="1.28s" />
+    <set attributeName="x" to="430" begin="0s" dur="1.28s" />
+    <set attributeName="width" to="0" begin="0s" dur="1.28s" />
+    <animate attributeName="x"       values="430;294"  dur="0.88s" begin="1.28s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1"/>
+    <animate attributeName="width"   values="0;272"    dur="0.88s" begin="1.28s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1"/>
+    <animate attributeName="opacity" values="0;1"      dur="0.22s" begin="1.28s" fill="freeze"/>
+  </rect>
 
   <!-- ── PRODUCT ENGINEER ── -->
   <text
@@ -50,7 +82,28 @@
     letter-spacing="5.5"
     text-anchor="middle"
     fill="var(--text-secondary)"
-  >PRODUCT ENGINEER</text>
+    opacity="1"
+  >
+    <set attributeName="opacity" to="0" begin="0s" dur="1.76s" />
+    <animate
+      attributeName="opacity"
+      values="0;1"
+      dur="0.9s"
+      begin="1.76s"
+      fill="freeze"
+      calcMode="spline"
+      keySplines="0.4 0 0.2 1"/>
+    <animateTransform
+      attributeName="transform"
+      type="translate"
+      values="0,7; 0,0"
+      dur="0.9s"
+      begin="1.76s"
+      fill="freeze"
+      calcMode="spline"
+      keySplines="0.4 0 0.2 1"/>
+    PRODUCT ENGINEER
+  </text>
 
   <!-- ── SECONDARY DESCRIPTOR ── -->
   <text
@@ -61,6 +114,27 @@
     letter-spacing="3.5"
     text-anchor="middle"
     fill="var(--text-secondary)"
-  >SOFTWARE · AI · DATA · SYSTEMS</text>
+    opacity="1"
+  >
+    <set attributeName="opacity" to="0" begin="0s" dur="1.96s" />
+    <animate
+      attributeName="opacity"
+      values="0;1"
+      dur="0.9s"
+      begin="1.96s"
+      fill="freeze"
+      calcMode="spline"
+      keySplines="0.4 0 0.2 1"/>
+    <animateTransform
+      attributeName="transform"
+      type="translate"
+      values="0,7; 0,0"
+      dur="0.9s"
+      begin="1.96s"
+      fill="freeze"
+      calcMode="spline"
+      keySplines="0.4 0 0.2 1"/>
+    SOFTWARE · AI · DATA · SYSTEMS
+  </text>
 
 </svg>

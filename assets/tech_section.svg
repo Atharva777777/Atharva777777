@@ -38,37 +38,77 @@
     </linearGradient>
   </defs>
 
-  <text x="46" y="36" class="section-title">TECHNOLOGY</text>
+  <g opacity="1">
+    <set attributeName="opacity" to="0" begin="0s" dur="0.1s" />
+    <animate attributeName="opacity" values="0;1" dur="1.2s" begin="0.1s" fill="freeze" />
+    <text x="46" y="36" class="section-title">TECHNOLOGY</text>
+  </g>
 
-  <rect x="46" y="55" width="768" height="0.75" rx="0.4" fill="url(#rl)" />
+  <g opacity="1">
+    <set attributeName="opacity" to="0" begin="0s" dur="0.2s" />
+    <animate attributeName="opacity" values="0;1" dur="0.8s" begin="0.2s" fill="freeze" />
+    <rect x="46" y="55" width="768" height="0.75" rx="0.4" fill="url(#rl)" />
+  </g>
 
-  <line x1="430" y1="75" x2="430" y2="305" stroke="url(#vsep)" stroke-width="0.75" />
+  <g opacity="1">
+    <set attributeName="opacity" to="0" begin="0s" dur="0.4s" />
+    <animate attributeName="opacity" values="0;1" dur="0.8s" begin="0.4s" fill="freeze" />
+    <line x1="430" y1="75" x2="430" y2="305" stroke="url(#vsep)" stroke-width="0.75" />
+  </g>
 
   <!-- LEFT COLUMN -->
-  <text x="46" y="90" class="category-title">LANGUAGES</text>
-  <text x="46" y="112" class="tech-list">Python · Java · JavaScript · TypeScript · SQL</text>
+  <g opacity="1">
+    <set attributeName="opacity" to="0" begin="0s" dur="0.3s" />
+    <animate attributeName="opacity" values="0;1" dur="1s" begin="0.3s" fill="freeze" />
+    <text x="46" y="90" class="category-title">LANGUAGES</text>
+    <text x="46" y="112" class="tech-list">Python · Java · JavaScript · TypeScript · SQL</text>
+  </g>
 
-  <text x="46" y="144" class="category-title">FRONTEND</text>
-  <text x="46" y="166" class="tech-list">React · Next.js · Tailwind CSS · Vite</text>
+  <g opacity="1">
+    <set attributeName="opacity" to="0" begin="0s" dur="0.5s" />
+    <animate attributeName="opacity" values="0;1" dur="1s" begin="0.5s" fill="freeze" />
+    <text x="46" y="144" class="category-title">FRONTEND</text>
+    <text x="46" y="166" class="tech-list">React · Next.js · Tailwind CSS · Vite</text>
+  </g>
 
-  <text x="46" y="198" class="category-title">BACKEND</text>
-  <text x="46" y="220" class="tech-list">Flask · FastAPI · Node.js · Express</text>
+  <g opacity="1">
+    <set attributeName="opacity" to="0" begin="0s" dur="0.7s" />
+    <animate attributeName="opacity" values="0;1" dur="1s" begin="0.7s" fill="freeze" />
+    <text x="46" y="198" class="category-title">BACKEND</text>
+    <text x="46" y="220" class="tech-list">Flask · FastAPI · Node.js · Express</text>
+  </g>
 
-  <text x="46" y="252" class="category-title">DATABASES &amp; DATA</text>
-  <text x="46" y="274" class="tech-list">PostgreSQL · Supabase · MongoDB</text>
-  <text x="46" y="296" class="tech-list">SQLite · SQLAlchemy</text>
+  <g opacity="1">
+    <set attributeName="opacity" to="0" begin="0s" dur="0.9s" />
+    <animate attributeName="opacity" values="0;1" dur="1s" begin="0.9s" fill="freeze" />
+    <text x="46" y="252" class="category-title">DATABASES &amp; DATA</text>
+    <text x="46" y="274" class="tech-list">PostgreSQL · Supabase · MongoDB</text>
+    <text x="46" y="296" class="tech-list">SQLite · SQLAlchemy</text>
+  </g>
 
   <!-- RIGHT COLUMN -->
-  <text x="476" y="90" class="category-title">AI / ML</text>
-  <text x="476" y="112" class="tech-list">Scikit-learn · Random Forest · SHAP · KMeans</text>
-  <text x="476" y="134" class="tech-list">Isolation Forest · LLMs · RAG · AI Agents</text>
-  <text x="476" y="156" class="tech-list">Prompt Engineering · Gemini</text>
+  <g opacity="1">
+    <set attributeName="opacity" to="0" begin="0s" dur="0.4s" />
+    <animate attributeName="opacity" values="0;1" dur="1s" begin="0.4s" fill="freeze" />
+    <text x="476" y="90" class="category-title">AI / ML</text>
+    <text x="476" y="112" class="tech-list">Scikit-learn · Random Forest · SHAP · KMeans</text>
+    <text x="476" y="134" class="tech-list">Isolation Forest · LLMs · RAG · AI Agents</text>
+    <text x="476" y="156" class="tech-list">Prompt Engineering · Gemini</text>
+  </g>
 
-  <text x="476" y="198" class="category-title">CLOUD / DEPLOYMENT</text>
-  <text x="476" y="220" class="tech-list">AWS · AWS EC2 · Vercel · Render · Docker</text>
+  <g opacity="1">
+    <set attributeName="opacity" to="0" begin="0s" dur="0.8s" />
+    <animate attributeName="opacity" values="0;1" dur="1s" begin="0.8s" fill="freeze" />
+    <text x="476" y="198" class="category-title">CLOUD / DEPLOYMENT</text>
+    <text x="476" y="220" class="tech-list">AWS · AWS EC2 · Vercel · Render · Docker</text>
+  </g>
 
-  <text x="476" y="252" class="category-title">TOOLS</text>
-  <text x="476" y="274" class="tech-list">Git · GitHub · Postman · VS Code</text>
-  <text x="476" y="296" class="tech-list">Cursor · Figma · Jupyter</text>
+  <g opacity="1">
+    <set attributeName="opacity" to="0" begin="0s" dur="1.0s" />
+    <animate attributeName="opacity" values="0;1" dur="1s" begin="1.0s" fill="freeze" />
+    <text x="476" y="252" class="category-title">TOOLS</text>
+    <text x="476" y="274" class="tech-list">Git · GitHub · Postman · VS Code</text>
+    <text x="476" y="296" class="tech-list">Cursor · Figma · Jupyter</text>
+  </g>
 
 </svg>

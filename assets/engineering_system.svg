@@ -30,63 +30,99 @@
   </defs>
 
   <!-- TRACE SYSTEM -->
-  <!-- Visible Main Line -->
-  <path d="M 105 110 L 755 110" class="line" />
+  <g opacity="1">
+    <set attributeName="opacity" to="0" begin="0s" dur="0.2s" />
+    <animate attributeName="opacity" values="0;1" dur="1.5s" begin="0.2s" fill="freeze" />
 
-  <!-- Visible Feedback Loop -->
-  <path d="M 755 110 L 755 195 Q 755 200 750 200 L 110 200 Q 105 200 105 195 L 105 110" class="loop-line" stroke-linejoin="round" />
+    <!-- Invisible full path for animation to follow continuously -->
+    <path id="traceFlow" d="M 105 110 L 755 110 L 755 195 Q 755 200 750 200 L 110 200 Q 105 200 105 195 Z" fill="none" />
 
-  <!-- Directional Arrows -->
-  <path d="M 168 106 L 173 110 L 168 114" class="line" stroke-linejoin="round" />
-  <path d="M 298 106 L 303 110 L 298 114" class="line" stroke-linejoin="round" />
-  <path d="M 428 106 L 433 110 L 428 114" class="line" stroke-linejoin="round" />
-  <path d="M 558 106 L 563 110 L 558 114" class="line" stroke-linejoin="round" />
-  <path d="M 688 106 L 693 110 L 688 114" class="line" stroke-linejoin="round" />
+    <!-- Visible Main Line -->
+    <path d="M 105 110 L 755 110" class="line" />
 
-  <!-- Arrow for Feedback loop -->
-  <path d="M 433 196 L 427 200 L 433 204" class="line" stroke-linejoin="round" stroke="var(--loop-color)" stroke-dasharray="none" />
+    <!-- Visible Feedback Loop -->
+    <path d="M 755 110 L 755 195 Q 755 200 750 200 L 110 200 Q 105 200 105 195 L 105 110" class="loop-line" stroke-linejoin="round" />
+
+    <!-- Directional Arrows -->
+    <path d="M 168 106 L 173 110 L 168 114" class="line" stroke-linejoin="round" />
+    <path d="M 298 106 L 303 110 L 298 114" class="line" stroke-linejoin="round" />
+    <path d="M 428 106 L 433 110 L 428 114" class="line" stroke-linejoin="round" />
+    <path d="M 558 106 L 563 110 L 558 114" class="line" stroke-linejoin="round" />
+    <path d="M 688 106 L 693 110 L 688 114" class="line" stroke-linejoin="round" />
+
+    <!-- Arrow for Feedback loop -->
+    <path d="M 433 196 L 427 200 L 433 204" class="line" stroke-linejoin="round" stroke="var(--loop-color)" stroke-dasharray="none" />
+  </g>
 
   <!-- NODES -->
-  <circle cx="105" cy="110" r="3.5" fill="var(--line-color)" />
-  <circle cx="235" cy="110" r="3.5" fill="var(--line-color)" />
-  <!-- Center focal node: BUILD -->
-  <circle cx="365" cy="110" r="4.5" fill="var(--accent)" />
-  <circle cx="495" cy="110" r="3.5" fill="var(--line-color)" />
-  <circle cx="625" cy="110" r="3.5" fill="var(--line-color)" />
-  <circle cx="755" cy="110" r="3.5" fill="var(--line-color)" />
+  <g opacity="1">
+    <set attributeName="opacity" to="0" begin="0s" dur="0.6s" />
+    <animate attributeName="opacity" values="0;1" dur="1.5s" begin="0.6s" fill="freeze" />
+
+    <circle cx="105" cy="110" r="3.5" fill="var(--line-color)" />
+    <circle cx="235" cy="110" r="3.5" fill="var(--line-color)" />
+    <!-- Center focal node: BUILD -->
+    <circle cx="365" cy="110" r="4.5" fill="var(--accent)" />
+    <circle cx="495" cy="110" r="3.5" fill="var(--line-color)" />
+    <circle cx="625" cy="110" r="3.5" fill="var(--line-color)" />
+    <circle cx="755" cy="110" r="3.5" fill="var(--line-color)" />
+  </g>
 
   <!-- MAIN LABELS -->
-  <text x="105" y="80" class="label">UNDERSTAND</text>
-  <text x="235" y="80" class="label">DESIGN</text>
-  <text x="365" y="80" class="label-accent">BUILD</text>
-  <text x="495" y="80" class="label">VERIFY</text>
-  <text x="625" y="80" class="label">SHIP</text>
-  <text x="755" y="80" class="label">IMPROVE</text>
+  <g opacity="1">
+    <set attributeName="opacity" to="0" begin="0s" dur="0.9s" />
+    <animate attributeName="opacity" values="0;1" dur="1.5s" begin="0.9s" fill="freeze" />
+
+    <text x="105" y="80" class="label">UNDERSTAND</text>
+    <text x="235" y="80" class="label">DESIGN</text>
+    <text x="365" y="80" class="label-accent">BUILD</text>
+    <text x="495" y="80" class="label">VERIFY</text>
+    <text x="625" y="80" class="label">SHIP</text>
+    <text x="755" y="80" class="label">IMPROVE</text>
+  </g>
 
   <!-- DESCRIPTIVE PHRASES -->
-  <text x="105" y="135" class="sublabel">what are we solving?</text>
+  <g opacity="1">
+    <set attributeName="opacity" to="0" begin="0s" dur="1.2s" />
+    <animate attributeName="opacity" values="0;1" dur="1.5s" begin="1.2s" fill="freeze" />
 
-  <text x="235" y="135" class="sublabel">choose the right</text>
-  <text x="235" y="152" class="sublabel">approach</text>
+    <text x="105" y="135" class="sublabel">what are we solving?</text>
 
-  <text x="365" y="135" class="sublabel">make it work</text>
-  <text x="365" y="152" class="tiny-tech">frontend · backend</text>
-  <text x="365" y="167" class="tiny-tech">data · AI</text>
+    <text x="235" y="135" class="sublabel">choose the right</text>
+    <text x="235" y="152" class="sublabel">approach</text>
 
-  <text x="495" y="135" class="sublabel">make sure it works</text>
-  <text x="495" y="152" class="tiny-tech">tests · debug · review</text>
+    <text x="365" y="135" class="sublabel">make it work</text>
+    <text x="365" y="152" class="tiny-tech">frontend · backend</text>
+    <text x="365" y="167" class="tiny-tech">data · AI</text>
 
-  <text x="625" y="135" class="sublabel">put it into</text>
-  <text x="625" y="152" class="sublabel">production</text>
-  <text x="625" y="169" class="tiny-tech">deploy · monitor</text>
+    <text x="495" y="135" class="sublabel">make sure it works</text>
+    <text x="495" y="152" class="tiny-tech">tests · debug · review</text>
 
-  <text x="755" y="135" class="sublabel">learn · iterate</text>
+    <text x="625" y="135" class="sublabel">put it into</text>
+    <text x="625" y="152" class="sublabel">production</text>
+    <text x="625" y="169" class="tiny-tech">deploy · monitor</text>
+
+    <text x="755" y="135" class="sublabel">learn · iterate</text>
+  </g>
 
   <!-- TINY TECHNICAL LABELS -->
-  <text x="170" y="98" class="tiny-label">PROBLEM</text>
-  <text x="300" y="98" class="tiny-label">SYSTEM</text>
-  <text x="430" y="98" class="tiny-label">VALIDATION</text>
-  <text x="560" y="98" class="tiny-label">RELEASE</text>
-  <text x="430" y="190" class="tiny-label">FEEDBACK</text>
+  <g opacity="1">
+    <set attributeName="opacity" to="0" begin="0s" dur="1.5s" />
+    <animate attributeName="opacity" values="0;1" dur="1.5s" begin="1.5s" fill="freeze" />
+
+    <text x="170" y="98" class="tiny-label">PROBLEM</text>
+    <text x="300" y="98" class="tiny-label">SYSTEM</text>
+    <text x="430" y="98" class="tiny-label">VALIDATION</text>
+    <text x="560" y="98" class="tiny-label">RELEASE</text>
+    <text x="430" y="190" class="tiny-label">FEEDBACK</text>
+  </g>
+
+  <!-- SIGNAL ANIMATION -->
+  <circle r="1.5" fill="var(--accent)" opacity="0">
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0; 0.1; 0.9; 1" dur="12s" repeatCount="indefinite" />
+    <animateMotion dur="12s" repeatCount="indefinite">
+      <mpath href="#traceFlow" />
+    </animateMotion>
+  </circle>
 
 </svg>
