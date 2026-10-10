@@ -27,5 +27,7 @@
 ![Technology](assets/tech_section.svg)
 
 </div>
+
 ---
+
 > Build useful things. Stay curious. Keep improving.
