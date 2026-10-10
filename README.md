@@ -20,24 +20,6 @@
 
 </div>
 
----
-
-### Selected Work
-
-**Ocean3D / VARUNA**<br>
-Real scientific data integration, backend APIs, and frontend visualization.<br>
-`Data Pipelines` · `API Architecture` · `Interactive Visualization`
-
-**Nexus Finance**<br>
-Full-stack financial application combining React/TypeScript, Flask, PostgreSQL, and machine-learning features.<br>
-`React / TypeScript` · `Flask` · `PostgreSQL` · `ML Integration`
-
-**Bloom Studio**<br>
-AI-powered website builder and product ownership.<br>
-`Product Engineering` · `AI Integration` · `Full-Stack Systems`
-
----
-
 <div align="center">
 
 ![Technology](assets/tech_section.svg)
