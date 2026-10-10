@@ -14,20 +14,6 @@
       }
     </style>
 
-    <!-- Clip rect for the name wipe-reveal (left → right) -->
-    <clipPath id="nameReveal">
-      <rect x="0" y="0" width="0" height="188">
-        <animate
-          attributeName="width"
-          values="0;860"
-          dur="1.35s"
-          begin="0.06s"
-          fill="freeze"
-          calcMode="spline"
-          keySplines="0.77 0 0.18 1"/>
-      </rect>
-    </clipPath>
-
     <!-- Warm-sand accent gradient -->
     <linearGradient id="ruleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%"   stop-color="var(--accent)" stop-opacity="0"/>
@@ -39,95 +25,42 @@
 
   </defs>
 
-  <!-- ── ATHARVA BORATE — clip wipe-reveal + subtle upward settle ── -->
-  <g clip-path="url(#nameReveal)">
-    <text
-      x="430" y="108"
-      font-family="'SF Pro Display', 'Helvetica Neue', 'Arial', sans-serif"
-      font-size="71"
-      font-weight="200"
-      letter-spacing="9"
-      text-anchor="middle"
-      fill="var(--text-primary)"
-    >
-      <animateTransform
-        attributeName="transform"
-        type="translate"
-        values="0,11; 0,0"
-        dur="1.35s"
-        begin="0.06s"
-        fill="freeze"
-        calcMode="spline"
-        keySplines="0.77 0 0.18 1"/>
-      ATHARVA BORATE
-    </text>
-  </g>
+  <!-- ── ATHARVA BORATE ── -->
+  <text
+    x="430" y="108"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif"
+    font-size="71"
+    font-weight="200"
+    letter-spacing="9"
+    text-anchor="middle"
+    fill="var(--text-primary)"
+  >
+    ATHARVA BORATE
+  </text>
 
-  <!-- ── Accent rule — draws from centre outward ── -->
-  <rect x="430" y="125" width="0" height="0.9" rx="0.45" fill="url(#ruleGrad)" opacity="0">
-    <animate attributeName="x"       values="430;294"  dur="0.88s" begin="1.28s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1"/>
-    <animate attributeName="width"   values="0;272"    dur="0.88s" begin="1.28s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1"/>
-    <animate attributeName="opacity" values="0;1"      dur="0.22s" begin="1.28s" fill="freeze"/>
-  </rect>
+  <!-- ── Accent rule ── -->
+  <rect x="294" y="125" width="272" height="0.9" rx="0.45" fill="url(#ruleGrad)" />
 
-  <!-- ── PRODUCT ENGINEER — delayed fade-up ── -->
+  <!-- ── PRODUCT ENGINEER ── -->
   <text
     x="430" y="148"
-    font-family="'SF Pro Display', 'Helvetica Neue', 'Arial', sans-serif"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif"
     font-size="10"
     font-weight="400"
     letter-spacing="5.5"
     text-anchor="middle"
     fill="var(--text-secondary)"
-    opacity="0"
-  >PRODUCT ENGINEER
-    <animate
-      attributeName="opacity"
-      values="0;1"
-      dur="0.9s"
-      begin="1.76s"
-      fill="freeze"
-      calcMode="spline"
-      keySplines="0.4 0 0.2 1"/>
-    <animateTransform
-      attributeName="transform"
-      type="translate"
-      values="0,7; 0,0"
-      dur="0.9s"
-      begin="1.76s"
-      fill="freeze"
-      calcMode="spline"
-      keySplines="0.4 0 0.2 1"/>
-  </text>
+  >PRODUCT ENGINEER</text>
 
-  <!-- ── SECONDARY DESCRIPTOR — further delayed fade-up ── -->
+  <!-- ── SECONDARY DESCRIPTOR ── -->
   <text
     x="430" y="168"
-    font-family="'SF Pro Display', 'Helvetica Neue', 'Arial', sans-serif"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif"
     font-size="8.5"
     font-weight="400"
     letter-spacing="3.5"
     text-anchor="middle"
     fill="var(--text-secondary)"
-    opacity="0"
-  >SOFTWARE · AI · DATA · SYSTEMS
-    <animate
-      attributeName="opacity"
-      values="0;1"
-      dur="0.9s"
-      begin="1.96s"
-      fill="freeze"
-      calcMode="spline"
-      keySplines="0.4 0 0.2 1"/>
-    <animateTransform
-      attributeName="transform"
-      type="translate"
-      values="0,7; 0,0"
-      dur="0.9s"
-      begin="1.96s"
-      fill="freeze"
-      calcMode="spline"
-      keySplines="0.4 0 0.2 1"/>
-  </text>
+  >SOFTWARE · AI · DATA · SYSTEMS</text>
 
 </svg>
